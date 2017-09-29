@@ -1,0 +1,41 @@
+{
+  "name": "Create a cognitive news alerting app",
+  "description": "Mine recent news articles to send custom alerts about a product, brand, or price changes",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": [
+    "node",
+    "watson"
+  ],
+  "generators": {
+    "node": [
+      "generator-starterkit-content-downloader",
+      "generator-ibm-cloud-enablement"
+    ]
+  },
+  "generatorOptions": {
+    "generator-starterkit-content-downloader": {
+      "registry": "https://npm-registry.whitewater.ibm.com",
+      "scope": "@arf",
+      "version": "latest"
+    },
+    "generator-ibm-cloud-enablement": {
+      "version": "latest"
+    }
+  },
+  "requiredCapabilities": [
+    "cloudant",
+    "discovery"
+  ],
+  "requiredCapabilitiesURLs": {
+    "cloudant": "https://console.bluemix.net/catalog/services/cloudant-nosql-db",
+    "discovery": "https://console.bluemix.net/catalog/services/discovery"
+  },
+  "servicePlans": {
+    "cloudant": "Lite",
+    "discovery": "lite"
+  },
+  "email": "cloud@us.ibm.com"
+}
